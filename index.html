@@ -1,159 +1,91 @@
-<!doctype html>
-<html class="h-100" lang="en">
-
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="A growing collection of ready-to-use components for the CSS framework Bootstrap 5">
-  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-  <link rel="icon" type="image/png" sizes="96x96" href=".t/img/favicon.png">
-  <meta name="author" content="Holger Koenemann">
-  <meta name="generator" content="Eleventy v2.0.0">
-  <meta name="HandheldFriendly" content="true">
-  <title>form-O-matic HTML Template - Frontpage one</title>
-  <link rel="stylesheet" href="css/theme.min.css">
-  <style>
-    /* inter-300 - latin */
-    @font-face {
-      font-family: 'Inter';
-      font-style: normal;
-      font-weight: 300;
-      font-display: swap;
-      src: local(''),
-        url('./fonts/inter-v12-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-        url('./fonts/inter-v12-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-    }
+    <title>IPO Form Filler</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
 
-    @font-face {
-      font-family: 'Inter';
-      font-style: normal;
-      font-weight: 500;
-      font-display: swap;
-      src: local(''),
-        url('./fonts/inter-v12-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-        url('./fonts/inter-v12-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-    }
+        .content {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            max-width: 900px;
+        }
 
-    @font-face {
-      font-family: 'Inter';
-      font-style: normal;
-      font-weight: 700;
-      font-display: swap;
-      src: local(''),
-        url('./fonts/inter-v12-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-        url('./fonts/inter-v12-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-    }
-  </style>
+        .text {
+            flex: 1;
+            text-align: left;
+            margin-right: 40px;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 50px; /* Increased font size */
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #333;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .cta-button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+
+        .feature {
+            display: flex;
+            align-items: center;
+            margin-top: 40px;
+        }
+
+        .feature img {
+            width: 100px;
+            height: 100px;
+            margin-right: 20px;
+        }
+
+        .feature h3 {
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .feature p {
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
 </head>
-
-<body data-bs-spy="scroll" data-bs-target="#navScroll">
-
-  <nav id="navScroll" class="navbar navbar-expand-lg navbar-light fixed-top" tabindex="0">
-    <div class="container">
-      <a class="navbar-brand pe-4 fs-4" href="/">
-        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-layers-half" viewbox="0 0 16 16">
-          <path d="M8.235 1.559a.5.5 0 0 0-.47 0l-7.5 4a.5.5 0 0 0 0 .882L3.188 8 .264 9.559a.5.5 0 0 0 0 .882l7.5 4a.5.5 0 0 0 .47 0l7.5-4a.5.5 0 0 0 0-.882L12.813 8l2.922-1.559a.5.5 0 0 0 0-.882l-7.5-4zM8 9.433 1.562 6 8 2.567 14.438 6 8 9.433z" />
-        </svg>
-        <span class="ms-1 fw-bolder">form-O-matic</span>
-      </a>
-
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#aboutus">
-              About us
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#workwithus">
-              Instructions
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <main>
-    <div class="w-100 overflow-hidden bg-gray-100" id="top">
-      <div class="container position-relative">
-        <div class="col-12 col-lg-8 mt-0 h-100 position-absolute bottom-0 end-0 bg-cover" data-aos="fade-left" style="background-image: url(img/main.png); right: 100px; bottom: 10px;"></div>
-        <div class="row">
-          <div class="col-lg-7 py-vh-6 position-relative" data-aos="fade-right">
-            <h1 class="display-1 fw-bold mt-5" style="font-size: 3rem;">Automate and Simplify Your Form-Filling Experience</h1>
-            <a href="#" class="btn btn-dark btn-xl shadow me-3 rounded-0 my-5" style="font-weight: bold; border-radius: 20px;">Get started</a>
-          </div>
+<body>
+    <div class="content">
+        <div class="text">
+            <h1>IPO Form Filler</h1>
+            <p>Streamline your IPO process with our automated form filling service.</p>
+            <p>Our service helps you fill out IPO forms quickly and accurately by extracting data from PDF files and populating it into Excel sheets.</p>
+            <p> </p>
+            <a href="https://prathamsaraf.pythonanywhere.com" class="cta-button">Get Started</a>
         </div>
-      </div>
+        <img src="main.png" alt="Robot" style="width: 400px;">
     </div>
-
-    <div class="py-vh-5 w-100 overflow-hidden" id="services">
-      <div class="container">
-        <div class="row d-flex justify-content-end"></div>
-      </div>
-    </div>
-
-    <div class="py-vh-4 bg-gray-100 w-100 overflow-hidden" id="aboutus">
-      <div class="container"></div>
-    </div>
-
-    <div class="position-relative overflow-hidden w-100 bg-light" id="gallery"></div>
-
-    <div class="py-vh-6 bg-gray-900 text-light w-100 overflow-hidden" id="workwithus">
-      <div class="container" style="max-width: 1200px;">
-        <div class="row d-flex justify-content-center">
-          <div class="row d-flex justify-content-center text-center">
-            <div class="col-lg-8 text-center" data-aos="fade">
-              <p class="text-secondary lead">Instructions to be followed.</p>
-              <p style="font-size: 30px;">1. Enter the number of forms you want to get filled in the "Enter Number of Forms" field.</p>
-              <p style="font-size: 30px;">2. Select the same number of forms you mentioned above by clicking the "Select PDF files" button.</p>
-              <p style="font-size: 30px;">3. Download the Excel Sheet and fill the details in the same format.</p>
-              <p style="font-size: 30px;">4. Upload that Excel file by clicking the "Select Excel" button.</p>
-              <p style="font-size: 30px;">5. Click the "Convert" button to initiate the conversion process.</p>
-              <p style="font-size: 30px;">6. Wait for the file to process, once finished it will automatically be downloaded to your system.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </main>
-
-  <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script>
-    AOS.init({
-      duration: 800, // values from 0 to 3000, with step 50ms
-    });
-  </script>
-
-  <script>
-    let scrollpos = window.scrollY;
-    const header = document.querySelector(".navbar");
-    const header_height = header.offsetHeight;
-
-    const add_class_on_scroll = () => header.classList.add("scrolled", "shadow-sm");
-    const remove_class_on_scroll = () => header.classList.remove("scrolled", "shadow-sm");
-
-    window.addEventListener('scroll', function() {
-      scrollpos = window.scrollY;
-
-      if (scrollpos >= header_height) {
-        add_class_on_scroll();
-      } else {
-        remove_class_on_scroll();
-      }
-
-      console.log(scrollpos);
-    });
-  </script>
-
 </body>
-
 </html>
